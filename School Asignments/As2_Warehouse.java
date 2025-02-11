@@ -58,6 +58,7 @@ public class As2_Warehouse {
 
             // break the loop when anything but Y or y is entered
             if (!answer.equals("y") || !answer.equals("Y")) {
+                scanner.close();
                 break;
             }
         }
