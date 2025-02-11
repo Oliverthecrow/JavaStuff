@@ -23,10 +23,10 @@ public class As2_Warehouse {
         // uses a single scanner to define variables via the user's console
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter type of product EX: 'guitar'");
+        System.out.println("Enter type of product EX: 'Guitar'");
         String productType = scanner.nextLine();
 
-        if (productType.equals(itemOnSale)) {
+        if (productType.equalsIgnoreCase(itemOnSale)) {
             System.out.println("This product is on sale.");
         }
 
