@@ -71,6 +71,8 @@ public class As2_Warehouse {
             // RECURSION WOOOOOOOOOOOOOOO
             SaleManagment();
         }
+        // closes scanner only after user enters something other than y
+        scanner.close();
     }
 
     public static void SaleCost(double markUp, double cost, String productType, int numberInShipment) {
