@@ -12,8 +12,8 @@ public class BalatroDeckBattle {
         double chips = 0;
         double multiplier = 0;
 
-        int chipRange = 250;
-        int multRange = 1000;
+        int chipRange = 200;
+        int multRange = 500;
 
         double normalScore = 0;
         double plasmaScore = 0;
@@ -37,7 +37,7 @@ public class BalatroDeckBattle {
                     "NormalWinCounter: " + Counter.NormalWinCounter + " PlasmaWinCounter: " + Counter.PlasmaWinCounter
                             + " Total Count: " + Counter.TotalCount);
         }
-        System.out.println("NormalPercentage: " 
+        System.out.println("NormalPercentage: "
                 + (double) Math.round(((double) Counter.NormalWinCounter / Counter.TotalCount) * 100000) / 1000 + "%");
         System.out.println("PlasmaPercentage: "
                 + (double) Math.round(((double) Counter.PlasmaWinCounter / Counter.TotalCount) * 100000) / 1000 + "%");
