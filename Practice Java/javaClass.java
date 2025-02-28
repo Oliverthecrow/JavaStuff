@@ -1,8 +1,8 @@
 public class javaClass {
-    double money = 10.0;
-    double tax = 2.0;
+    int redMarbles = 5;
+    int blueMarbles = 7;
 
     public void totalAmount() {
-        System.out.println(money + tax);
+        System.out.println(redMarbles + blueMarbles);
     }
 }
