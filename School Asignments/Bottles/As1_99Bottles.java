@@ -4,8 +4,9 @@ public class As1_99Bottles {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String preferedDrink = "";
+        String color = "\u001B[96m";
 
-        System.out.println("How old are you:");
+        System.out.println(color + "How old are you:");
         int age = Integer.parseInt(scanner.nextLine());
 
         if (age >= 18) {
@@ -31,6 +32,7 @@ public class As1_99Bottles {
     }
 
     public static void bottlesOnTheWall(String bottleType) {
+        String colorReset = "\u001B[0m";
         for (int i = 99; i > -1; i--) {
             if (i != 1 && i >= 99) {
                 System.out.println(i + " bottles of " + bottleType + " on the wall");
@@ -48,5 +50,6 @@ public class As1_99Bottles {
                 System.out.println("If one of those bottles were to fall,");
             }
         }
+        System.out.println(colorReset);
     }
 }
