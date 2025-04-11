@@ -1,6 +1,6 @@
 
-import java.util.Scanner;
 import java.time.LocalDate;
+import java.util.Scanner;
 
 class As3_Airfare {
     public static void main(String[] args) {
